@@ -22,13 +22,13 @@ GRPC grpcb.in:9000/hello.HelloService/BidiHello
 // This is just a debug output example
 {{+after
   console.info(`gRPC response status code is: ${response.statusCode}`);
-	console.info(`gRPC response is: ${response.body}`);
+  console.info(`gRPC response is: ${response.body}`);
 }}
 
 // Test script 
 {{+after
   const { equal } = require('assert');
-	
+  
 // Check for the gRPC status success code
 // https://grpc.github.io/grpc/core/md_doc_statuscodes.html
   test('gRPC status code is 0', () => {
@@ -36,10 +36,10 @@ GRPC grpcb.in:9000/hello.HelloService/BidiHello
   });
 
 // Check for the stream response messages equal
-	test('gRPC stream response messages are as expected', () => {
-		const responseMessagesObj = JSON.parse(response.body); 
-		equal(responseMessagesObj[0].reply,'hello first');
-		equal(responseMessagesObj[1].reply,'hello second');
-		equal(responseMessagesObj[2].reply,'hello third');	
+  test('gRPC stream response messages are as expected', () => {
+    const responseMessagesObj = JSON.parse(response.body); 
+    equal(responseMessagesObj[0].reply,'hello first');
+    equal(responseMessagesObj[1].reply,'hello second');
+    equal(responseMessagesObj[2].reply,'hello third');	
 });
 }}
