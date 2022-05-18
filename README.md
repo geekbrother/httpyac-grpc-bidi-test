@@ -15,7 +15,7 @@ To run the tests you need to clone the repository, [install httpyac](https://htt
 httpyac *.grpc --all
 ```
 
-This will run `testbidiFail.grpc` and `testbidiSuccess.grpc` test files.
+This will run [`testbidiFail.grpc`](https://github.com/geekbrother/httpyac-grpc-bidi-test/blob/main/testbidiFail.grpc) and [`testbidiSuccess.grpc`](https://github.com/geekbrother/httpyac-grpc-bidi-test/blob/main/testbidiSuccess.grpc) test files.
 
 ### `testbidiSuccess.grpc`
 
