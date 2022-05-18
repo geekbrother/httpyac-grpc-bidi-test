@@ -1,4 +1,4 @@
-# httpyac-grpc-bidi-test
+# gRPC bidirectional stream testing using httpyac tool
 
 ## What the purpose of this
 
